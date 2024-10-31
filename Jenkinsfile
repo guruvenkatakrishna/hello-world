@@ -25,7 +25,7 @@ pipeline {
 		stage('Deploy') {
 			steps {
 				echo 'Deploying into environment'
-				sh'rsync -avz /var/lib/jenkins/workspace/tomcat/webapp/target/*.war /home/ubuntu/tomcat/webapps'
+				sh'rsync -avz -e ssh /var/lib/jenkins/workspace/tomcat/webapp/target/*.war ubuntu@172.31.1.14/home/ubuntu/tomcat/webapps'
 			}
 		}
 	}
