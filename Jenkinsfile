@@ -4,6 +4,7 @@ pipeline {
 		TOMCAT_USER="ec2-user"
 		TOMCAT_HOST="172.31.43.219"
 		TOMCAT_PATH="/home/ec2-user/tomcat/webapps"
+	}
 	stages {
 		stage('Checkout') {
 			steps {
@@ -26,6 +27,5 @@ pipeline {
 				echo 'Deploying into environment'
 			}
 		}
-	}
 	}
 }
