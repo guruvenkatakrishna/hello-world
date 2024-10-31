@@ -8,7 +8,7 @@ pipeline {
 		stage('Checkout') {
 			steps {
 				echo 'Checkout completed'
-				git branch: 'main', url: 'https://github.com/guruvenkatakrishna/hello-world.git'
+				git branch: 'master', url: 'https://github.com/guruvenkatakrishna/hello-world.git'
 			}
 		}
 		stage('test') {
