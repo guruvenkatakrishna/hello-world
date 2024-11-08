@@ -29,6 +29,7 @@ pipeline {
 		}
 		stage('Deploy') {
 			steps {
+				sh 'this is deploy'
 
 			}
 		}
