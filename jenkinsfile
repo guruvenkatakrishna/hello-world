@@ -24,12 +24,12 @@ pipeline {
 		}
 		stage('Build') {
 			steps {
-				sh 'this is build'
+				echo 'this is build'
 			}
 		}
 		stage('Deploy') {
 			steps {
-				sh 'this is deploy'
+				echo 'this is deploy'
 
 			}
 		}
